@@ -137,7 +137,7 @@ def bot(op):
                               md += "🔎² .larangan on/off\n"                            
                               md += "🔎² .hust\n"                            
                               md += "🔎² .spbot\n"
-                              cl.sendText(msg.to, md)                            
+                              cl.sendMessage(msg.to, md)                            
                             
                         elif text.lower() == ".setx":
                             if msg._from in RASuper:
@@ -157,7 +157,7 @@ def bot(op):
                                 else: md+="❎ autojoin\n" 
                                 if Setmain["larangan"] == True: md+="✅ larangan\n"
                                 else: md+="❎ larangan\n"                                     
-                                cl.sendText(msg.to, md)
+                                cl.sendMessage(msg.to, md)
                                 
             #---------------------- On/Off Command -------------------# 
             
@@ -281,7 +281,7 @@ def bot(op):
                                     Setmain["autoscan"] = True
                                     ginfo = cl.getGroup(msg.to)
                                     msgs = "cekmid diaktifkan\nDi Group  " +str(ginfo.name)
-                                    cl.sendText(msg.to, msgs)                                    
+                                    cl.sendMessage(msg.to, msgs)                                    
                                 else:
                                     cl.sendMessageWithMention(msg.to,msg._from,"","Sudah aktif")
                                     
@@ -310,12 +310,12 @@ def bot(op):
                         elif text.lower() == ".gid":
                             if msg._from in RASuper:                            
                                 cl.sendMessageWithMention(msg.to, msg._from,"","\nMemproses..")
-                                cl.sendText(msg.to,msg.to)
+                                cl.sendMessage(msg.to,msg.to)
                             
                         elif text.lower() == ".yid":
                             if msg._from in RASuper:                            
                                 cl.sendMessageWithMention(msg.to, msg._from,"","\nMemproses..")
-                                cl.sendText(msg.to,msg._from)
+                                cl.sendMessage(msg.to,msg._from)
                         
                         elif text.lower() == ".respon":
                             if msg._from in RASuper:                            
@@ -324,7 +324,7 @@ def bot(op):
                         elif text.lower() == ".spbot":
                             if msg._from in RASuper:                            
                                 start = time.time()
-                                cl.sendText(msg.to, "eror...")
+                                cl.sendMessage(msg.to, "eror...")
                                 elapsed_time = time.time() - start
                                 cl.sendText(msg.to, "%s " % (elapsed_time))
                           
@@ -362,7 +362,7 @@ def bot(op):
                                    a = a + 1
                                    end = "\n"
                                    ma += "╠ " + str(a) + ". " +G.name+ "\n"
-                               cl.sendText(msg.to,"╔══[ ℓιsт gяσυρ ]\n║\n"+ma+"║\n╚══[ тσтαℓ「"+str(len(gid))+"」gяσυρ ]")                                
+                               cl.sendMessage(msg.to,"╔══[ ℓιsт gяσυρ ]\n║\n"+ma+"║\n╚══[ тσтαℓ「"+str(len(gid))+"」gяσυρ ]")                                
                                 
                         elif text.lower() == ".listbl1":
                             if msg._from in RASuper:
@@ -375,7 +375,7 @@ def bot(op):
                                         no += 1
                                         hasil += "\n" + str(no) + ". " + str(a.displayName)
                                     hasil += "\n\nтσтαℓ {} вℓα¢ℓιsт".format(str(len(cl.getContacts(Setmain["blacklist"]))))
-                                    cl.sendText(msg.to,hasil)
+                                    cl.sendMessage(msg.to,hasil)
 
                                     
                         elif ".hust1" in text.lower():
