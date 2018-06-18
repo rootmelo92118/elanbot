@@ -1,15 +1,17 @@
 {
-    "RAautoadd": true,
-    "RAautojoin": true,
-    "RAautoread": false,
-    "RAautoscan": true,
+    "autoadd": false,
+    "autojoin": true,
+    "autoread": false,
+    "protect": false,
+    "protectguest": false,
+    "protectqr": false,    
+    "larangan": false,    
+    "autoscan": false,
+    "cancel": false,    
     "RAbatas":{"on":true,"members":1},
-    "RAmessage": "http://line.me/ti/p/~@enr7503k",
-    "RAmessage1": "Selamat datang...",
-    "RAreadMember": {},
-    "RAblacklist": {},
-    "RAreadPoint": {}
-    "RAadmin": {}
-    "RAstaff": {}
-    "RAwhite": {}
+    "RAmessage": "http://line.me/ti/p/~rian-rian.",
+    "message1": "Selamat datang...",
+    "readMember": {},
+    "blacklist": {},   
+    "readPoint": {}
 }
